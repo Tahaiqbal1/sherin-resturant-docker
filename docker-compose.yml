@@ -3,7 +3,7 @@ services:
   backend:
     build:
       context: ./backend
-    container_name: backend-service
+    container_name: backend-service-new
     ports:
       - "8001:8001"
     environment:
@@ -16,7 +16,7 @@ services:
   frontend:
     build:
       context: ./frontend
-    container_name: frontend-service
+    container_name: frontend-service-new
     ports:
       - "3000:80"
     environment:
@@ -27,7 +27,7 @@ services:
 
   db:
     image: mongo:5
-    container_name: db-service
+    container_name: db-service-new
     ports:
       - "27017:27017"
     volumes:
