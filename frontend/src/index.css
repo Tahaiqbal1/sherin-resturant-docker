@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Outfit', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.ant-menu-item-selected {
+  background-color: #F49E1A !important; 
+  color: white !important;
+}
+
+.ant-menu-item-selected a {
+  color: white !important;
+}
+.custom-spin .ant-spin-dot i {
+  background-color: #F49E1A; 
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.dotted-line {
+  border-bottom: 1px dotted #000;  /* Black dotted line */
+  width: 100%;
+  margin: 10px 0;
+}
+
+.custom-title {
+  animation: fadeIn 2s ease-out;
+  color: #4d4dff; 
+  font-size: 28px;
+  font-weight: bold; 
+  color: #F49E1A;
+}
+.ant-layout-sider-collapsed .ant-layout-sider-trigger {
+  background-color: #F49E1A !important;
+}
+
+.ant-layout-sider .ant-layout-sider-trigger {
+  background-color: #F49E1A !important;
+  color: white !important; 
+}
+.invoice-container {
+  font-family: 'Outfit', Arial, sans-serif;
+  width: 70mm;
+  margin: auto;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 4mm;
+  line-height: 1rem;
+  height:100%
+}
+.invoice-header {
+  margin-bottom: 20px;
+  line-height: 2rem;
+}
+
+.invoice-title {
+  margin: 0;
+  font-weight: "600";
+  text-align: center;
+}
+
+.invoice-date,
+.invoice-payment-mode {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.invoice-table {
+  width: 100%;  
+  border-collapse: collapse;  
+  font-family: Arial, sans-serif; 
+}
+
+.invoice-table th, .invoice-table td {
+  text-align: left; 
+  padding: 8px; 
+  border-bottom: 1px solid #ccc;  
+  font-size: 11px;  
+}
+
+.invoice-table th {
+  background-color: #f4f4f4; 
+  font-weight: normal; 
+}
+
+.invoice-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.invoice-summary {
+  margin-top: 10px;
+  line-height: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.invoice-total {
+  font-weight: bold;
+}
+
+.print-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #FEC919;
+}
+.invoice-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20mm; /* Adjust as needed */
+  height: 70px; 
+}
+.invoice-payment-mode {
+  margin: 0; /* This will ensure there is no space between paragraphs */
+  font-size: 0.8em;
+  /* ... other styles ... */
+}
+
+/* ... rest of the CSS ... */
+
+@media print {
+  .invoice-container {
+    padding: 20;
+    height: 297mm; /* Adjust as needed for print */
+    width: 60mm; /* Ensure this matches your print settings */
+    /* Add any print-specific styles here */
+  }
+}
+
+
+
+
+
+
+
